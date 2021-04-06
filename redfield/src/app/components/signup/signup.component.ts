@@ -15,14 +15,13 @@ export class SignupComponent implements OnInit {
       lName : [''],
       email : [''],
       password: [''],
-      imageUrl: [''],
       phoneNumber: [''],
     })
    }
    submit(){
     this.objectService
     .addUsers(this.signupForm.value)
-    .subscribe(object => {console.log(object , 'laaaa')})
+    .subscribe(object => {console.log(object)}) 
   }
 
 

@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SignupComponent } from './components/signup/signup.component';
-import {RouterModule, Routes} from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SigninComponent } from './components/signin/signin.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+
+import { NavbarComponent } from './components/navbar/navbar.component';
+
+import {RouterModule, Routes} from '@angular/router';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { HomeComponent } from './components/home/home.component'
 
 const appRoutes: Routes = [
@@ -18,9 +25,10 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    SigninComponent,
+    UserProfileComponent,
     NavbarComponent,
     SignupComponent,
-    SigninComponent,
     HomeComponent
 
   ],
@@ -28,6 +36,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // NgbModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       {enableTracing: true}
