@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~11.2.8",
     "@angular/platform-browser-dynamic": "~11.2.8",
     "@angular/router": "~11.2.8",
+    "bootstrap": "^4.6.0",
     "bulma": "^0.9.2",
     "gulp4": "^4.0.2",
     "jquery": "^3.6.0",
