@@ -7,9 +7,9 @@ import {HttpClient} from '@angular/common/http';
 })
 export class UserService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {}
   addUsers(object: Object){
-    return this.http.post('http://localhost:3000/signup' , object)
+    return this.http.post('http://localhost:3000/user/signup' , object)
 
 }
 }
