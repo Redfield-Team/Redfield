@@ -1,1 +1,99 @@
-<p>signup works!</p>
+<!-- <form [formGroup]="signupForm" >
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">First Name</label>
+      <input type="email" class="form-control" id="inputEmail4"  formControlName="fName" >
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Last Name</label>
+      <input type="email" class="form-control" id="inputEmail4"  formControlName="lName" >
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4"  formControlName="email" >
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" formControlName="password">
+    </div>
+
+  <div class="form-group">
+    <label for="inputAddress">imageUrl</label>
+    <input type="text" class="form-control" id="inputAddress" formControlName="imageUrl">
+  </div>
+
+    <div class="form-group col-md-2">
+      <label for="inputPhoneNumber">PhoneNumber</label>
+      <input type="text" class="form-control" id="inputZip"  formControlName="phoneNumber">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="submit()">Signup</button>
+</form> -->
+
+
+<html>
+<style>
+
+</style>
+<body>
+<div id="id01" class="modal">
+ 
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="FirstName"><b>FirstName</b></label>
+      <input type="text" placeholder="Enter FirstName" name="FirstName" required>
+
+      <label for="LastName"><b>LastName</b></label>
+      <input type="text" placeholder="Enter LastName" name="LastName" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="PhoneNumber"><b>PhoneNumber</b></label>
+      <input type="number" placeholder="PhoneNumber" name="PhoneNumber" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

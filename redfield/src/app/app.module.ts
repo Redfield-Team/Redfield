@@ -10,22 +10,41 @@ import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
+import { NavbarComponent } from './components/navbar/navbar.component';
 
+import {RouterModule, Routes} from '@angular/router';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { HomeComponent } from './components/home/home.component'
+
+const appRoutes: Routes = [
+];
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    SignupComponent,
     UserProfileComponent,
+    NavbarComponent,
+    SignupComponent,
+    HomeComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
+    HttpClientModule,
+    RouterModule.forRoot(
+      appRoutes,
+      {enableTracing: true}
+    ),
+    ReactiveFormsModule,
     HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
