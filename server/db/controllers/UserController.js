@@ -17,7 +17,6 @@ const createUser = (req, res) => {
         lName: req.body.lName,
         email: req.body.email,
         password: hash,
-        imageUrl:req.body.imageUrl,
         phoneNumber: req.body.phoneNumber,
     })
 
