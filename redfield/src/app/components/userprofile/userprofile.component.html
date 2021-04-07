@@ -1,0 +1,93 @@
+
+  <div class="profile-container" >
+    <!-- account setting logo -->
+    <h2 class="ui center aligned icon header">
+      <h2 class="ui header">
+        <i class="settings icon"></i>
+        <div class="content" wfd-id="43">
+          Account Settings
+          <div class="sub header" wfd-id="44">Manage your preferences</div>
+        </div>
+      </h2>
+    </h2>
+    <!-- for efit or delete account -->
+    <div class="delEd">
+      <button (click)='redirect()' class="ui active button" wfd-id="285" >
+        <i class="user icon" ></i>
+        Edit profile
+      </button>
+    </div>
+
+
+
+    <div class="ui two steps" wfd-id="93">
+      <div class="active step" wfd-id="97">
+        <i class="user icon"></i>
+        <div class="content" wfd-id="98">
+          <div class="title" wfd-id="99">First Name</div>
+        </div>
+      </div>
+      <div class="disabled step" wfd-id="94">
+        <div class="content" wfd-id="95">
+          <div class="title" wfd-id="96">{{dataUser.fName}}</div>
+        </div>
+      </div>
+    </div>
+    <!-- last name -->
+    <div class="ui two steps" wfd-id="93">
+      <div class="active step" wfd-id="97">
+        <i class="user icon"></i>
+        <div class="content" wfd-id="98">
+          <div class="title" wfd-id="99">Last Name</div>
+        </div>
+      </div>
+      <div class="disabled step" wfd-id="94">
+        <div class="content" wfd-id="95">
+          <div class="title" wfd-id="96">{{dataUser.lName}}</div>
+        </div>
+      </div>
+    </div>
+    <!-- password -->
+    <div class="ui two steps" wfd-id="93">
+      <div class="active step" wfd-id="97">
+        <i class="key icon"></i>
+        <div class="content" wfd-id="98">
+          <div class="title" wfd-id="99">Password</div>
+        </div>
+      </div>
+      <div class="disabled step" wfd-id="94">
+        <div class="content" wfd-id="95">
+          <div class="title" wfd-id="96">we are hiding you password</div>
+        </div>
+      </div>
+    </div>
+    <!-- email -->
+    <div class="ui two steps" wfd-id="93">
+      <div class="active step" wfd-id="97">
+        <i class="at icon"></i>
+        <div class="content" wfd-id="98">
+          <div class="title" wfd-id="99">email</div>
+        </div>
+      </div>
+      <div class="disabled step" wfd-id="94">
+        <div class="content" wfd-id="95">
+          <div class="title" wfd-id="96">{{dataUser.email}}</div>
+        </div>
+      </div>
+    </div>
+    <!-- phone number -->
+    <div class="ui two steps" wfd-id="93">
+      <div class="active step" wfd-id="97">
+        <i class="phone icon"></i>
+        <div class="content" wfd-id="98">
+          <div class="title" wfd-id="99">phone Number</div>
+        </div>
+      </div>
+      <div class="disabled step" wfd-id="94">
+        <div class="content" wfd-id="95">
+          <div class="title" wfd-id="96">{{dataUser.phoneNumber}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+

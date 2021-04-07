@@ -10,18 +10,18 @@ import { Router, RouterModule, Routes } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   constructor(private router:Router) { }
-  functionON() {
-    this.router.navigate(["/Signup"])
+  // functionON() {
+  //   this.router.navigate(["/Signup"])
 
-  }
-  functionIn() {
-    this.router.navigate(["/Signin"])
+  // }
+  // functionIn() {
+  //   this.router.navigate(["/Signin"])
 
-  }
-  functionHome() {
-    this.router.navigate(["/home"])
+  // }
+  // functionHome() {
+  //   this.router.navigate(["/home"])
 
-  }
+  // }
   ngOnInit(): void {
   }
 

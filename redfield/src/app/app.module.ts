@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
-import { UserProfileComponent } from './components/user-profile/user-profile.component';
+
 
 import { NavbarComponent } from './components/navbar/navbar.component';
 
@@ -16,7 +16,12 @@ import {RouterModule, Routes} from '@angular/router';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { HomeComponent } from './components/home/home.component'
+import { HomeComponent } from './components/home/home.component';
+import { Navbar2Component } from './components/navbar2/navbar2.component';
+import { Navbar3Component } from './components/navbar3/navbar3.component';
+import { UserprofileComponent } from './components/userprofile/userprofile.component';
+import { NavbarmyprofileComponent } from './components/navbarmyprofile/navbarmyprofile.component';
+import { EditprofileComponent } from './components/editprofile/editprofile.component'
 
 const appRoutes: Routes = [
 ];
@@ -26,10 +31,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SigninComponent,
-    UserProfileComponent,
     NavbarComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    Navbar2Component,
+    Navbar3Component,
+    UserprofileComponent,
+    NavbarmyprofileComponent,
+    EditprofileComponent
 
   ],
   imports: [

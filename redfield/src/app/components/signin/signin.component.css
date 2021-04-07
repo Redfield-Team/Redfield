@@ -1,1 +1,18 @@
 
+button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  color: black;
+  background-color: #fff200;
+  padding: 20px 30px;
+  margin: 50px 5px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.container{
+  margin-top: 90px;
+  width: 600px;
+  background: bisque;
+}
