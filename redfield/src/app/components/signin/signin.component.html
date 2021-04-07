@@ -1,2 +1,28 @@
 
 
+<!-- Default form login -->
+<div class="container">
+<form class="text-center border border-light p-5" [formGroup]= "signinForm" (submit)= "submit()"  >
+
+  <p class="h4 mb-4">Sign in</p>
+
+  <!-- Email -->
+  <input type="email" id="inputEmail" class="form-control mb-4" placeholder="E-mail"  formControlName="email" >
+
+  <!-- Password -->
+  <input type="password" id="iputPassword" class="form-control mb-4" placeholder="Password"  formControlName="password">
+
+  <!-- Sign in button -->
+  <button mdbBtn color="info" block="true" class="my-4" type="submit"  >Sign in</button>
+
+  <!-- Register -->
+  <p>Not a member?
+    <a href="" >Register</a>
+  </p>
+
+  <!-- Social login -->
+
+
+</form>
+</div>
+<!-- Default form login -->

@@ -1,0 +1,37 @@
+<div [formGroup]= "updateForm" >
+<h3>please enter your valid email</h3>
+<div class="ui left corner labeled input">
+  <input  formControlName="email" type="text" placeholder="Please put your email">
+  <div class="ui left corner label">
+    <i class="asterisk icon"></i>
+  </div>
+</div>
+<br>
+
+<div class="userForm" >
+  <div class="ui big form" wfd-id="150">
+    <div class="two fields" wfd-id="152">
+      <div class="field" wfd-id="155">
+        <label wfd-id="156">First Name</label>
+        <input  formControlName="fName" placeholder="First Name" type="text" wfd-id="544" />
+      </div>
+      <div class="field" wfd-id="153">
+        <label wfd-id="154">Last Name</label>
+        <input placeholder="Last Name" type="text" wfd-id="543" />
+      </div>
+    </div>
+    <div class="two fields" wfd-id="152">
+      <div class="field" wfd-id="155">
+        <label wfd-id="156">Password</label>
+        <input  formControlName="password" placeholder="password" type="text" wfd-id="544"type="password" />
+      </div>
+      <div class="field" wfd-id="153">
+        <label wfd-id="154">Phone Number</label>
+        <input  formControlName="phoneNumber" placeholder="phone Number" type="text" wfd-id="543" />
+      </div>
+    </div>
+    <div (click)='rediracteIn()'  class="ui submit button" wfd-id="151">Submit</div>
+  </div>
+</div>
+</div>
+
