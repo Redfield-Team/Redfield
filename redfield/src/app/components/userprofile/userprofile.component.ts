@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-userprofile',
@@ -7,15 +8,26 @@ import { Router, RouterModule, Routes } from '@angular/router';
   styleUrls: ['./userprofile.component.css']
 })
 export class UserprofileComponent implements OnInit {
-
-  constructor(private router:Router)  { }
+  dataUser : any
+  constructor(private router:Router, private service: UserService)  { }
   redirect(){
     this.router.navigate(['/editprofile'])
+    this.getData()
   }
 
-  
+
+
 
   ngOnInit(): void {
+  this.dataUser = this.service.getData()
+
+  }
+
+
+  getData(){
+
+
+
   }
 
 }

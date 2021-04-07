@@ -21,8 +21,10 @@ export class SigninComponent implements OnInit {
       this.objectService
       .logUsers(this.signinForm.value)
       .subscribe(object => {
-        localStorage.setItem('tkn', JSON.stringify(object))
-       console.log(JSON.parse(localStorage.tkn).token)
+        localStorage.setItem('data', JSON.stringify(object))
+       const dataUser = (JSON.parse(localStorage.data).data)
+       console.log(dataUser)
+       this.objectService.setter(dataUser)
        Swal.fire({
         icon: 'success',
         title: 'Your account is created successfully',
