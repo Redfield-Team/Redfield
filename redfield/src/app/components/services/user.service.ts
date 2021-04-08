@@ -12,4 +12,9 @@ export class UserService {
     return this.http.post('http://localhost:3000/user/signup' , object)
 
 }
+
+getAllDemand(){
+  return this.http.get('http://localhost:3000/demand/all')
+}
+
 }
