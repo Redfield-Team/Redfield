@@ -12,9 +12,7 @@ const routes: Routes = [
     //  {path:"",component:NavbarComponent},
     {path:"Signup",component:SignupComponent},
     {path:"Signin",component:SigninComponent},
-    {path:"home",component:HomeComponent},
-
-
+    {path:"home",component:HomeComponent}
 ];
 
 @NgModule({

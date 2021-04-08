@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder,FormControl} from '@angular/forms';
+import { FormGroup, FormBuilder,FormControl,Validators} from '@angular/forms';
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -13,16 +13,15 @@ export class SignupComponent implements OnInit {
     this.signupForm = this.addUser.group({
       fName : [''],
       lName : [''],
-      email : [''],
+      email : ['', [Validators.email,Validators.required]],
       password: [''],
-      imageUrl: [''],
       phoneNumber: [''],
     })
    }
    submit(){
-    this.objectService
-    .addUsers(this.signupForm.value)
-    .subscribe(object => {console.log(object , 'laaaa')})
+      this.objectService
+      .addUsers(this.signupForm.value)
+      .subscribe(object => {console.log(object)})
   }
 
 

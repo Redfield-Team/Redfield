@@ -17,6 +17,8 @@ import {RouterModule, Routes} from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { HomeComponent } from './components/home/home.component'
+import { DemandCardComponent } from './components/demand-card/demand-card.component';
+import { AddDemandComponent } from './components/add-demand/add-demand.component';
 
 const appRoutes: Routes = [
 ];
@@ -29,7 +31,9 @@ const appRoutes: Routes = [
     UserProfileComponent,
     NavbarComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    DemandCardComponent,
+    AddDemandComponent
 
   ],
   imports: [
